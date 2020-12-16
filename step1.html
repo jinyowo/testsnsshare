@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta property="og:url" content="https://jinyowo.github.io/testsnsshare/step1.html">
+  <meta property="og:image" content = "">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Onstage 10th 프로모션">
+  <meta property="og:description" content="온스테이지 10주년 프로젝트를 소개합니다.">
+  <link rel="stylesheet" href="css/onstage_promotion.css">
+  <title>Onstage 10th 프로모션 STEP</title>
+</head>
+<body>
+  <div id="wrap">
+    <div class="step_container">
+      <div class="contents">
+        <div class="contents_header">
+          <h1 class="logo_onstage"><span class="blind">10 ONSTAGE</span></h1>
+          <!-- [D] step2 에서 display:block 시켜주세요. -->
+          <button type="button" class="btn_back" data-back-btn><span class="blind">Back</span></button>
+        </div>
+
+        <!-- [D] step1_content : step1 영역 -->
+        <div class="step1_content" data-step1-container>
+          <h2 class="step_title">STEP 1</h2>
+          <p class="step_desc">원하는 공연 컨셉을 선택해주세요.</p>
+
+          <div class="concept_wrap" >
+            <ul class="concept_list" data-concept-list>
+              <!-- [D] 활성화시 li 에 on 클래스 넣어주세요. -->
+              <li class="concept_item" data-index="1">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept1.jpg" width="98" height="98" alt="컨셉 1">
+                  </div>
+                  <p class="concept_tag">#바닷가 #로맨틱한</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="2">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept2.jpg" width="98" height="98" alt="컨셉 2">
+                  </div>
+                  <p class="concept_tag">#숲속 #차분한</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="3">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept3.jpg" width="98" height="98" alt="컨셉 3">
+                  </div>
+                  <p class="concept_tag">#할로윈 #하드코어</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="4">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept4.jpg" width="98" height="98" alt="컨셉 4">
+                  </div>
+                  <p class="concept_tag">#선상파티 #럭셔리</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="5">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept5.jpg" width="98" height="98" alt="컨셉 5">
+                  </div>
+                  <p class="concept_tag">#궁 #조선의힙</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="6">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept6.jpg" width="98" height="98" alt="컨셉 6">
+                  </div>
+                  <p class="concept_tag">#달 #싸이키델릭</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="7">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept7.jpg" width="98" height="98" alt="컨셉 7">
+                  </div>
+                  <p class="concept_tag">#1박2일 #이색적인</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="8">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept8.jpg" width="98" height="98" alt="컨셉 8">
+                  </div>
+                  <p class="concept_tag">#동굴 #어드벤쳐</p>
+                </a>
+              </li>
+              <li class="concept_item" data-index="9">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/concept/img_concept9.jpg" width="98" height="98" alt="컨셉 9">
+                  </div>
+                  <p class="concept_tag">#한강 <br>#반려동물과함께 </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg_circle circle2"></div>
+        </div>
+
+
+        <!-- [D] step 2 활성화시 display: block 해주세요. -->
+        <div class="step2_content" data-step2-container style="display: none;">
+          <div class="bg_circle circle3"></div>
+          <h2 class="step_title">STEP 2</h2>
+          <p class="step_desc">컨셉에 어울리는 아이템을 배치해주세요.</p>
+
+          <div class="concept_deco_box">
+            <!-- [D] 배경 컨셉별로  bg_concept1 | bg_concept2 | bg_concept3 | bg_concept4 | bg_concept5 | bg_concept6 | bg_concept7 | bg_concept8 | bg_concept9-->
+            <div class="deco_area" data-deco-container>
+              <!-- [D] 큐브 컬러
+              color1 : 빨 |  color2: 주 | color3: 노 | color4: 초 | color5: 파 | color6: 남 | color7: 보 | color8: 검 | color9: 흰-->
+              <div class="cube_box color1" data-cube-item>
+                <div class="cube"></div>
+                <!-- bar1 ~ 3 : 검은색 사람 이미지위로 올라와야 하는 큐브선들입니다. 이미지 위로 덮여야하기떄문에 따로 뺌.  -->
+                <div class="cube_bar bar1"></div>
+                <div class="cube_bar bar2"></div>
+                <div class="cube_bar bar3"></div>
+              </div>
+              <!-- 사람형태 이미지 -->
+              <div class="img_pp"></div>
+            </div>
+
+            <div class="deco_item_area">
+              <ul class="tab" role="tablist" aria-label="컨셉 아이템" data-tab-list>
+                <!-- [D] 활성화시 aria-selected 속성 값을 true로 변경해주세요.
+                비활성화 aria-selected="false", 해당 컨텐츠(item_content) 는 none/block 시켜주세요. -->
+                <li class="tab_item tab_onstage" role="tab" aria-selected="true" aria-controls="onstage">
+                  <button type="button" class="tab_btn"><span class="blind">ITEM A</span></button>
+                </li>
+                <li class="tab_item tab_items" role="tab" aria-selected="false" aria-controls="concept">
+                  <button type="button" class="tab_btn"><span class="blind">ITEM B</span></button>
+                </li>
+                <li class="tab_item tab_cube" role="tab" aria-selected="false" aria-controls="cube">
+                  <button type="button" class="tab_btn"><span class="blind">CUBE</span></button>
+                </li>
+              </ul>
+
+              <!-- 온스테이지 item (onstage_item_box) -->
+              <div class="item_content onstage_item_box" role="tabpanel" id="onstageItem" data-items="onstage">
+                <!-- [D] 아이템 클릭시 상단 .deco_area 에 클릭한 태그와 클래스 그대로 넣어주세요. -->
+                <div class="onstage_item onstage_item1" tabindex="0" data-index="1"><span class="blind">ONSTAGE</span></div>
+                <div class="onstage_item onstage_item2" tabindex="0" data-index="2"><span class="blind">선물박스</span></div>
+                <div class="onstage_item onstage_item3" tabindex="0" data-index="3"><span class="blind">고깔모자</span></div>
+                <div class="onstage_item onstage_item4" tabindex="0" data-index="4"><span class="blind">퐝파레</span></div>
+                <div class="onstage_item onstage_item5" tabindex="0" data-index="5"><span class="blind">풍선</span></div>
+                <div class="onstage_item onstage_item6" tabindex="0" data-index="6"><span class="blind">깃발</span></div>
+              </div>
+              <!-- //온스테이지 item -->
+
+              <!-- 컨셉별 아이템 (concept_item_box)-->
+              <!-- [D] 아이템 클릭시 상단 .deco_area 에 클릭한 태그와 클래스 그대로 넣어주세요. -->
+              <div class="item_content concept_item_box" role="tabpanel" id="conceptItem" style="display: none;" data-items="concept">
+                <!-- 1 : 바닷가 -->
+                <div class="concept1_box">
+                  <div class="cc_items concept1_item1" tabindex="0" data-index="1"><span class="blind">모래바구니</span></div>
+                  <div class="cc_items concept1_item2" tabindex="0" data-index="2"><span class="blind">튜브</span></div>
+                  <div class="cc_items concept1_item3" tabindex="0" data-index="3"><span class="blind">코코넛</span></div>
+                  <div class="cc_items concept1_item4" tabindex="0" data-index="4"><span class="blind">비치볼</span></div>
+                  <div class="cc_items concept1_item5" tabindex="0" data-index="5"><span class="blind">갈매기</span></div>
+                </div>
+
+                <!-- 2 : 숲속 -->
+                <div class="concept2_box">
+                  <div class="cc_items concept2_item1" tabindex="0" data-index="1"><span class="blind">도토리</span></div>
+                  <div class="cc_items concept2_item2" tabindex="0" data-index="2"><span class="blind">토끼</span></div>
+                  <div class="cc_items concept2_item3" tabindex="0" data-index="3"><span class="blind">모자</span></div>
+                  <div class="cc_items concept2_item4" tabindex="0" data-index="4"><span class="blind">벤치</span></div>
+                </div>
+
+                <!-- 3 : 할로윈 -->
+                <div class="concept3_box">
+                  <div class="cc_items concept3_item1" tabindex="0" data-index="1"><span class="blind">유령</span></div>
+                  <div class="cc_items concept3_item2" tabindex="0" data-index="2"><span class="blind">모자</span></div>
+                  <div class="cc_items concept3_item3" tabindex="0" data-index="3"><span class="blind">R.I.P 묘비</span></div>
+                  <div class="cc_items concept3_item4" tabindex="0" data-index="4"><span class="blind">호박</span></div>
+                </div>
+
+                <!-- 4 : 선상 -->
+                <div class="concept4_box">
+                  <div class="cc_items concept4_item1" tabindex="0" data-index="1"><span class="blind">와인</span></div>
+                  <div class="cc_items concept4_item2" tabindex="0" data-index="2"><span class="blind">초</span></div>
+                  <div class="cc_items concept4_item3" tabindex="0" data-index="3"><span class="blind">선글라스</span></div>
+                  <div class="cc_items concept4_item4" tabindex="0" data-index="4"><span class="blind">가랜드</span></div>
+                </div>
+
+                <!-- 5 : 궁 -->
+                <div class="concept5_box">
+                  <div class="cc_items concept5_item1" tabindex="0" data-index="1"><span class="blind">불</span></div>
+                  <div class="cc_items concept5_item2" tabindex="0" data-index="2"><span class="blind">태극 문양</span></div>
+                  <div class="cc_items concept5_item3" tabindex="0" data-index="3"><span class="blind">부채</span></div>
+                  <div class="cc_items concept5_item4" tabindex="0" data-index="4"><span class="blind">명패</span></div>
+                  <div class="cc_items concept5_item5" tabindex="0" data-index="5"><span class="blind">탈</span></div>
+                </div>
+
+                <!-- 6 : 달 -->
+                <div class="concept6_box">
+                  <div class="cc_items concept6_item1" tabindex="0" data-index="1"><span class="blind">우주복 헬멧</span></div>
+                  <div class="cc_items concept6_item2" tabindex="0" data-index="2"><span class="blind">외계인</span></div>
+                  <div class="cc_items concept6_item3" tabindex="0" data-index="3"><span class="blind">행성</span></div>
+                  <div class="cc_items concept6_item4" tabindex="0" data-index="4"><span class="blind">깃발</span></div>
+                  <div class="cc_items concept6_item5" tabindex="0" data-index="5"><span class="blind">별</span></div>
+                </div>
+
+                <!-- 7 : 1박 2일 -->
+                <div class="concept7_box">
+                  <div class="cc_items concept7_item1" tabindex="0" data-index="1"><span class="blind">윌슨</span></div>
+                  <div class="cc_items concept7_item2" tabindex="0" data-index="2"><span class="blind">소라</span></div>
+                  <div class="cc_items concept7_item3" tabindex="0" data-index="3"><span class="blind">보물상자</span></div>
+                  <div class="cc_items concept7_item4" tabindex="0" data-index="4"><span class="blind">모닥불</span></div>
+                  <div class="cc_items concept7_item5" tabindex="0" data-index="5"><span class="blind">게</span></div>
+                </div>
+
+                <!-- 8 : 동굴 -->
+                <div class="concept8_box">
+                  <div class="cc_items concept8_item1" tabindex="0" data-index="1"><span class="blind">두더지</span></div>
+                  <div class="cc_items concept8_item2" tabindex="0" data-index="2"><span class="blind">나침판</span></div>
+                  <div class="cc_items concept8_item3" tabindex="0" data-index="3"><span class="blind">모자</span></div>
+                  <div class="cc_items concept8_item4" tabindex="0" data-index="4"><span class="blind">박쥐</span></div>
+                  <div class="cc_items concept8_item5" tabindex="0" data-index="5"><span class="blind">후레쉬</span></div>
+                </div>
+
+                <!-- 9 : 한강 -->
+                <div class="concept9_box">
+                  <div class="cc_items concept9_item1" tabindex="0" data-index="1"><span class="blind">햄스터</span></div>
+                  <div class="cc_items concept9_item2" tabindex="0" data-index="2"><span class="blind">장난감</span></div>
+                  <div class="cc_items concept9_item3" tabindex="0" data-index="3"><span class="blind">케이지</span></div>
+                  <div class="cc_items concept9_item4" tabindex="0" data-index="4"><span class="blind">개</span></div>
+                  <div class="cc_items concept9_item5" tabindex="0" data-index="5"><span class="blind">고양이</span></div>
+                </div>
+
+              </div>
+              <!-- //컨셉별 아이템 -->
+
+              <!-- CUVE item (cube_item_box)-->
+              <div class="item_content cube_item_box" role="tabpanel" id="cubeItem" style="display: none;" data-items="cube">
+                <button type="button" class="cube_item color1 on" data-color="1"><span class="blind">RED</span></button>
+                <button type="button" class="cube_item color2" data-color="2"><span class="blind">Orange</span></button>
+                <button type="button" class="cube_item color3" data-color="3"><span class="blind">Yellow</span></button>
+                <button type="button" class="cube_item color4" data-color="4"><span class="blind">Green</span></button>
+                <button type="button" class="cube_item color5" data-color="5"><span class="blind">Blue</span></button>
+                <button type="button" class="cube_item color6" data-color="6"><span class="blind">Indigo</span></button>
+                <button type="button" class="cube_item color7" data-color="7"><span class="blind">Violet </span></button>
+                <button type="button" class="cube_item color8" data-color="8"><span class="blind">black</span></button>
+                <button type="button" class="cube_item color9" data-color="9"><span class="blind">white</span></button>
+              </div>
+              <!-- CUVE item -->
+
+              <!-- download : 다운르도버튼영역 활성화시  .button_wrap 에 display:block 해주세요.  -->
+              <div class="button_wrap" data-share-area>
+                <button type="button" class="btn_download" data-download-btn>DOWNLOAD</button>
+                <!-- [D] 공유 버튼클릭시 on 클래스 넣어주세요.  -->
+                <button type="button" class="btn_share" data-share-btn><span class="blind">공유하기</span></button>
+                <ul class="sns_list" data-share-list>
+                  <li>
+                    <a href="#" target="_blank" class="sns_insta" data-sns-type="instagram"><span class="blind">인스타그램</span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="sns_facebook" data-sns-type="facebook"><span class="blind">페이스북</span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="sns_kakao" data-sns-type="kakao"><span class="blind">카카오톡</span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="sns_band" data-sns-type="band"><span class="blind">밴드</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="event_notice" style="display: none;" data-notice-area>
+            <h3 class="notice_title">이벤트 참여 방법</h3>
+            <p class="desc">내가 만든 공연 컨셉을 SNS에 올려주세요.<br>
+              포스팅하면서 내가 만든 무대에 올라갔으면 하는<br>
+              뮤지션의 인스타그램을 태그해주시면<br>
+              이벤트 당첨 확률이 높아집니다.</p>
+            
+            <a href="#" class="btn btn_event">이벤트 응모</a>
+            <p class="desc">
+              가장 많이 선택 받은 공연은<br>
+              코로나 사태가 종료되고 실제 공연 컨셉에<br>
+              반영하여 제작될 예정입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IOS 용 다운로드 팝업 -->
+    <!-- [D] ios 다운로드 팝업 display: none/block 
+      팝업 활성화시 #wrap 에 scroll_hide 클래스 넣어주세요 (팝업 뒤영역 스크롤 방지)
+    -->
+    <div class="ly_download" style="display: none;" data-download-popup>
+      <button type="button" class="btn_back" data-close-popup-btn><span class="blind">Back</span></button>
+      
+      <div class="ly_content">
+        <div class="download_img_area">
+          <img src="" width="324" height="356" class="download_img">
+        </div>
+      </div>
+
+      <p class="download_notice">이미지를 꾹 눌러 이미지 저장을 선택해주세요.</p>
+    </div>
+  </div>
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script src="js/interact.min.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/onstage-10th/promotion.js"></script>
+</body>
+</html>
